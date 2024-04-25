@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroSoft Place</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: 'Courier New', monospace;
+            color: #00FF00;
+            padding: 20px;
+        }
+        header {
+            background-color: #252525;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #FFD700;
+            font-size: 3em;
+            text-shadow: 2px 2px #FF4500;
+        }
+        nav {
+            background: #333333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #00FF00;
+        }
+        main {
+            margin-top: 20px;
+        }
+        .game-link {
+            display: inline-block; /* Allows multiple links per line */
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s ease; /* Smooth transform effect on hover */
+        }
+        .game-link img {
+            width: 100px; /* Standardize image width */
+            height: auto;
+            border-radius: 5px; /* Rounded corners for the images */
+        }
+        .game-link:hover {
+            transform: scale(1.1); /* Enlarges the image slightly on hover */
+        }
+        .settings-panel {
+            background-color: #202020;
+            color: #00FF00;
+            padding: 10px;
+            border: 2px dashed #FFD700;
+            position: fixed;
+            right: 20px;
+            top: 100px;
+            width: 200px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #252525;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RetroSoft Place</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="ms.html">Minesweeper</a>
+        <a href="mah.html">Mahjong</a>
+        <a href="sol.html">solitaire</a>
+    </nav>
+    <main>
+        <h2>Featured Games</h2>
+        <a href="ms.html" class="game-link"><img src="bomb.png" alt="Minesweeper"></a>
+        <a href="mah.html" class="game-link"><img src="imah.png" alt="Mahjong"></a>
+        <a href="sol.html" class="game-link"><img src="sol.png" alt="solitaire"></a>
+    </main>
+    <div class="settings-panel">
+        <h3>Settings</h3>
+        <p>Adjust your experience:</p>
+        <button onclick="alert('Settings applied!')">Apply Settings</button>
+    </div>
+    <footer>
+        © 2024 RetroSoft Place. All rights reserved.
+    </footer>
+</body>
+</html>

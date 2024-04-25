@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Classic Snake</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* Importing a pixelated font */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1abc9c; /* Vibrant greenish background reminiscent of old school games */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Press Start 2P', cursive; /* Retro-styled font for a classic feel */
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #f39c12; /* Bold, fun color */
+            text-shadow: 3px 3px 0px #27ae60;
+        }
+        .game-container {
+            width: 640px; /* Suitable width for gameplay */
+            height: 480px; /* Suitable height for gameplay */
+            border: 5px solid #f1c40f; /* Vibrant border color */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #f39c12; /* Match the header */
+            text-decoration: none;
+            font-size: 20px; /* Larger font for visibility */
+            font-family: 'Press Start 2P', cursive;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Classic Snake Game</h1>
+        <div class="game-container">
+            <iframe src="https://play.gamepix.com/classic-snake-html5/embed?sid=110792" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <footer>
+            <a href="cgames2.html">Back to Homepage</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); 
+
+        body {
+            background-image: url('backm.png'); 
+            font-family: 'Press Start 2P', cursive; 
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0; 
+        }
+        header {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8); 
+            padding: 20px;
+            border-bottom: 5px solid #FFD700; 
+        }
+        h1 {
+            color: #FFD700; 
+            text-shadow: 0 0 20px #0000CD; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .instructions {
+            background-color: rgba(255, 215, 0, 0.1); 
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px; 
+            border: 2px solid #FFD700; 
+            text-align: left; 
+            font-size: 16px; 
+            color: #000; 
+        }
+        iframe.game {
+            width: 100%; 
+            max-width: 1000px; 
+            height: 800px;
+            display: block;
+            margin: auto; 
+        }
+        iframe.youtube {
+            width: 50%;
+            height: 450px;
+            display: block;
+            margin: auto; 
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: #FFF;
+        }
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minesweeper</h1>
+    </header>
+    <main>
+        <iframe class="game" src="https://html-classic.itch.zone/html/9570894/index.html" frameborder="0" allowfullscreen></iframe>
+        <div class="instructions">
+            <h2>How to Play</h2>
+            <p>Minesweeper is a classic puzzle game. The goal is to clear a board containing hidden mines without detonating any, with help from clues about the number of neighboring mines in each field.</p>
+            <ul>
+                <li><strong>Left Click</strong> a tile to reveal what is underneath.</li>
+                <li><strong>Right Click</strong> to place flags on suspected mines.</li>
+                <li>Numbers show how many mines are adjacent to that square.</li>
+                <li>Clear all non-mined squares to win the game.</li>
+            </ul>
+        </div>
+        <iframe class="youtube" src="https://www.youtube.com/embed/7B85WbEiYf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+    <footer>
+        <a href="cgames2.html">Back to Homepage</a>
+    </footer>
+</body>
+</html>

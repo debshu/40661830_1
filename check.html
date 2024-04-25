@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Checkers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            padding: 40px;
+            background-color: #282c34;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+        header {
+            color: #61dafb;
+            text-align: center;
+            animation: pulse 2s infinite;
+			}
+       h1 {
+        font-size: 50px;
+        }
+        iframe {
+            display: block;
+            width: 100%; 
+            max-width: 1000px; 
+            height: 800px; 
+            margin: 20px auto;
+            border: 5px solid #61dafb;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #61dafb;
+        }
+        .instructions {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 20px #ccc;
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #61dafb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @keyframes pulse {
+            0% { text-shadow: 0 0 5px #61dafb; }
+            50% { text-shadow: 0 0 20px #61dafb, 0 0 30px #61dafb; }
+            100% { text-shadow: 0 0 5px #61dafb; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Checkers</h1>
+    </header>
+    <main>
+        <iframe src="https://html-classic.itch.zone/html/2108019/index.html?v=1591302074" frameborder="0"></iframe>
+        <div class="instructions">
+            <h2>How to Play Checkers</h2>
+            <p>Checkers is a fun and strategic game played between two players. Try to outmaneuver your opponent and capture all their pieces to win!</p>
+            <p><strong>Gameplay Tips:</strong></p>
+            <ul>
+                <li><strong>Setup:</strong> Position your pieces strategically to control the center.</li>
+                <li><strong>Moves:</strong> Plan ahead, thinking about your moves and potential counter-moves.</li>
+                <li><strong>Jumping:</strong> Always be on the lookout for jump opportunities to capture opponent pieces.</li>
+                <li><strong>Kinging:</strong> Getting kinged early can give you a significant advantage.</li>
+                <li><strong>Strategy:</strong> Try different strategies like defensive play or aggressive attacks to find what works best against different opponents.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <a href="cgames2.html">Back to Homepage</a>
+    </footer>
+</body>
+</html>
