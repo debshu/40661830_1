@@ -52,21 +52,20 @@
             justify-content: center;
             margin-bottom: 20px;
         }
-        input[type="text"] {
+        input[type="text"], input[type="submit"] {
             font-size: 16px;
             padding: 10px;
-            border: 1px solid #ddd;
             border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="text"] {
+            border: 1px solid #ddd;
             width: 50%;
             margin-right: 10px;
         }
         input[type="submit"] {
-            padding: 10px 20px;
             background-color: #FFD700;
             border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
         }
         input[type="submit"]:hover {
             background-color: #FFB900;
@@ -75,24 +74,22 @@
             display: inline-block;
             margin: 10px;
             text-align: center;
-            width: 120px; 
+            width: 120px;
             transition: transform 0.3s ease;
         }
         .game-link img {
-            width: 100%; 
+            width: 100%;
             height: auto;
             border-radius: 5px;
         }
-        .game-title {
-            display: block; 
-            color: #FFFFFF; 
-            font-size: 0.8em; 
-        }
         .game-link:hover {
-            transform: scale(1.2); 
-            cursor: pointer; 
-            z-index: 1; 
-            position: relative; 
+            transform: scale(1.2);
+            z-index: 1;
+            position: relative;
+        }
+        .game-title {
+            color: #FFFFFF;
+            font-size: 0.8em;
         }
         footer {
             text-align: center;
@@ -114,14 +111,9 @@
         <a href="sol.html">Solitaire</a>
         <a href="check.html">Checkers</a>
         <button class="dropdown-btn">Settings</button>
-        <div class="dropdown-content">
-            <button onclick="document.body.style.fontSize='larger'">Increase Text Size</button>
-            <button onclick="document.body.style.color='#FFFFFF'; document.body.style.backgroundColor='#000000';">High Contrast</button>
-            <button onclick="document.body.style.backgroundColor='#FFFFFF'; document.body.style.color='#000000';">Normal Contrast</button>
-        </div>
     </nav>
     <div class="intro">
-        This website offers playable retro Windows games and other mobile and internet games from that era.
+        Enjoy retro Windows games and more, all right here.
     </div>
     <div class="search-bar">
         <input type="text" placeholder="Search games...">
